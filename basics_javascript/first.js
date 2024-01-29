@@ -4,7 +4,7 @@ const my_Arr= [0,2,4,,4,2,"kjfgn"]
  my_Arr.push (45)
  my_Arr.push (45)
 
- 
+ //to pop the element
  my_Arr.pop()
 
  my_Arr.unshift(0)
