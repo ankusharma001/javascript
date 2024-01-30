@@ -16,11 +16,11 @@ const jsuser ={
 
 }
 
-// console.log(jsuser.name);
-// console.log(jsuser["name"]);
-// console.log(jsuser["nameo"]);
+console.log(jsuser.name);
+console.log(jsuser["name"]);
+console.log(jsuser["nameo"]);
 
-// console.log(jsuser[sym]);
+console.log(jsuser[sym]);
 
 //now i cannot change the value in teh object 
 // Object.freeze(jsuser)
@@ -36,10 +36,10 @@ jsuser.greetingtwo = function(){
   console.log(`hello js user, ${this.name}`);
 }
 
-// console.log(jsuser.greeting);
-// console.log(jsuser.greeting());
+console.log(jsuser.greeting);
+console.log(jsuser.greeting());
 
-// console.log(jsuser.greetingtwo());
+console.log(jsuser.greetingtwo());
 
 //singleton object
 // const insta = new Object();
@@ -61,11 +61,12 @@ const instagrm ={
 
 //merge object
 
-// const obj3=Object.assign({},jsuser,instagrm.name.place) // all value stored in {}
+const obj3=Object.assign({},jsuser,instagrm.name.place) // all value stored in {}
+console.log(obj3);
 
-const obj3 = {...jsuser,...instagrm.name.place}
+const obj4 = {...jsuser,...instagrm.name.place}
 
-// console.log(obj3);
+// console.log(obj4);
 
 const arr =[
   {
