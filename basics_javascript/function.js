@@ -73,3 +73,18 @@ const functions =(num1 ,num2)=> (num1+num2) //u don't have to write the return s
 console.log(functions(2,3));
 
 
+
+// Immmidiately INvoke Function Expressions (IIFE)
+
+//for remove global scope pollutiion
+
+(function hello()
+{
+  console.log(`hello`);
+})();
+
+((name)=> {
+  console.log(`hello ${name}`);
+})("hsjh");
+
+
