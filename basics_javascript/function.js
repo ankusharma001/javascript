@@ -90,3 +90,22 @@ console.log(functions(2,3));
 })("hsjh");
 
 
+
+const summer = (a, b)=>
+{
+
+  return a+b;
+}
+
+ console.log( summer(1,2));
+
+//  🔖 we use foreach method for itration in array 
+
+const arr = [1,2,4,5,6];
+
+arr.forEach(arr=> {
+  
+
+  console.log(arr);
+});
+
