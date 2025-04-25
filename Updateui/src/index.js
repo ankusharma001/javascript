@@ -1,9 +1,16 @@
 import mongoose from "mongoose";
 import { DB_NAME } from "./constants.js";
 import express from "express";
+import userRouter from "./routes/user.routes.js";
 const app = express()
 import dotenv from "dotenv"
 import connectDB from "./db/index.js";
+
+// Middleware to parse incoming JSON requests
+app.use(express.json());
+
+// Use user routes
+app.use("/api/v1/users", userRouter);
 
 
 dotenv.config({
