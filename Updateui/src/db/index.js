@@ -3,8 +3,12 @@ import { DB_NAME } from "../constants.js";
 
 const connectDB = async () => {
   try {
+    // Construct the connection URI with DB_NAME
+    const uri = `${process.env.MONGODB_URI.endsWith('/') ? process.env.MONGODB_URI : process.env.MONGODB_URI + '/'}${DB_NAME}`;
+
+    
     // Connect to MongoDB
-    const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`, {
+    const connectionInstance = await mongoose.connect(uri, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

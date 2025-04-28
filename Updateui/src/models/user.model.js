@@ -33,7 +33,7 @@ const userschema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  coverIMAGE: {
+  coverimage: {
     type: String,
     required: false,
   },

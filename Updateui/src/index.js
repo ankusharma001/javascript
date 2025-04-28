@@ -11,6 +11,7 @@ app.use(express.json());
 
 // Use user routes
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/user/home", userRouter);
 
 
 dotenv.config({
